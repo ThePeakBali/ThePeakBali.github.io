@@ -13,6 +13,12 @@ main {
   margin: 0px;
 }
 
+@media (max-width: 991.98px) { 
+  .navigation {
+    padding: 2% 2% 1% 2%;
+  }
+}
+
 .navigation-layout {
   display: grid;
   grid-template-rows: 1fr;
@@ -40,7 +46,7 @@ main {
 
 @media (max-width: 991.98px) { 
   .navigation-brand img {
-    width: 13rem;
+    width: 10rem;
   }
 }
 
@@ -90,6 +96,12 @@ main {
   padding: 0px;
 }
 
+/* @media (max-width: 575.98px) { 
+  .navigation-container-2 {
+    display: none;
+  }
+} */
+
 button {
   width: 5rem;
   border-radius: 10px 10px 10px 10px;
@@ -109,8 +121,8 @@ button {
 
 .navigation-button-toggle {
   display: none;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
   background-color: #2E3133;
   padding: 0px;
   position: relative;
