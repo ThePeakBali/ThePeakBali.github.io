@@ -1,0 +1,127 @@
+main {
+  padding: 0px;
+  margin: 0px;
+  background-color: #2E3133;
+  height: 100vh;
+}
+
+.navigation {
+  background-color: #1F2122;
+  border-bottom: 1px solid white;
+  width: 100%;
+  padding: 1%;
+  margin: 0px;
+}
+
+.navigation-layout {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 0px;
+  padding: 0px;
+}
+
+.navigation-container-1 {
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navigation-brand {
+  display: inline-flex;
+  align-items: center;
+}
+ 
+.navigation-brand img {
+  width: 16rem;
+}
+
+@media (max-width: 991.98px) { 
+  .navigation-brand img {
+    width: 13rem;
+  }
+}
+
+.navigation-list {
+  display: inline-flex;
+  list-style-type: none;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  gap: 1rem;
+  margin-left: 2rem;
+}
+
+.navigation-item {
+  padding: 0.2rem;
+  margin: 0px;
+  min-width: max-content;
+  text-align: center;
+  transition: all 250ms ease-in-out 10ms;
+}
+
+.navigation-item:hover {
+  border: 2px solid darkgray;
+  border-radius: 10px 10px 1px 1px;
+  border-bottom: 1px solid lightgray;
+}
+
+.navigation-item a {
+  color: white;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+@media (max-width: 991.98px) { 
+  .navigation-list {
+    display: none;
+  }
+}
+
+.navigation-container-2 {
+  display: flex;
+  justify-content: end;
+  grid-column-start: -1;
+  grid-column-end: -2;
+  margin: 0px;
+  padding: 0px;
+}
+
+button {
+  width: 5rem;
+  border-radius: 10px 10px 10px 10px;
+  padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+  min-width: max-content;
+  margin: 0px;
+}
+
+.navigation-container-3 {
+  display: flex;
+  align-items: center;
+  grid-column-start: -1;
+  grid-column-end: span 1;
+  margin: 0px 0px 0px 0.5rem;
+  padding: 0px;
+}
+
+.navigation-button-toggle {
+  display: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #2E3133;
+  padding: 0px;
+  position: relative;
+}
+
+@media (max-width: 991.98px) { 
+  .navigation-button-toggle {
+    display: inline-block;
+  }
+}
+
+.navigation-button-toggle svg {
+  border-radius: 10px 10px 10px 10px;
+}
