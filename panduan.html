@@ -11,16 +11,16 @@
   <script src="javascript/ThePeakBali.js" defer></script>
   <title>The Peak Bali</title>
 </head>
-<body>
+<body class="light-mode">
   <nav class="navigation">
     <div class="navigation-layout">
       <div class="navigation-container-1">
         <a href="/" class="navigation-brand">
-            <img class="" src="logo/thepeak-night.png" alt="THE PEAK" title="THE PEAK">
-            <img class="invisible" src="logo/thepeak-light.png" alt="THE PEAK" title="THE PEAK">
+            <img src="logo/thepeak-night.png" alt="THE PEAK" title="THE PEAK">
+            <img src="logo/thepeak-light.png" alt="THE PEAK" title="THE PEAK">
         </a>
         <ul class="navigation-list">
-          <li class="navigation-item"><a href="index.html">Halaman Depan</a></li>
+          <li class="navigation-item"><a href="/">Halaman Depan</a></li>
           <li class="navigation-item navigation-btn-active"><a href="">Panduan</a></li>
           <li class="navigation-item"><a href="">Keuangan</a></li>
           <li class="navigation-item"><a href="">Ketersedian Kamar</a></li>
@@ -28,7 +28,15 @@
         </ul>
       </div>
       <div class="navigation-container-2">
-        <button class="navigation-theme-mode">Dark Mode</button>
+        <div class="navigation-theme-mode">
+          <div class="navigation-theme-button"></div>
+          <svg width="100%" height="100%" viewBox="0 0 32 32">
+            <use href="resources/theme-toggler/light.svg#icon"></use>
+          </svg>
+          <svg width="100%" height="100%" viewBox="0 0 32 32">
+            <use href="resources/theme-toggler/dark.svg#icon"></use>
+          </svg>
+        </div>
       </div>
       <div class="navigation-container-3">
         <button class="navigation-button-toggle">

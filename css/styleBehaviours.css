@@ -1,4 +1,7 @@
-/* Navigation's collapse */
+.toggle-theme-button {
+  left: 50%;
+}
+
 .navigation-collapse {
   display: flex;
   flex-direction: column;
@@ -8,11 +11,14 @@
   left: 50%;
   scale: 0%;
   z-index: 10;
-  background-color: #1f212289;
-  border: 1px solid gray;
+  background-color: var(--navigation-collapse-background-color);
+  border: 1px solid var(--navigation-collapse-border-color);
   border-radius: 10px 0px 10px 10px;
   padding: 0.5rem;
-  transition: all 250ms ease-in-out;
+  transition: top 250ms ease-in-out,
+              left 250ms ease-in-out,
+              visibility 250ms ease-in-out,
+              scale 250ms ease-in-out;
 }
 
 .collapse-show {
@@ -22,10 +28,11 @@
   scale: 100%;
 }
 
-.navigation-btn-active {
-  border: 2px solid darkgray;
-  border-radius: 10px 10px 1px 1px;
-  border-bottom: 1px solid lightgray;
+.navigation-way-to-close-sidebar {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 8;
 }
 
 .invisible {
